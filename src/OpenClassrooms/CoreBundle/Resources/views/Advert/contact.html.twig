@@ -1,0 +1,18 @@
+{% extends "OpenClassroomsCoreBundle::layout.html.twig" %}
+
+{% block title %}
+    Contact
+{% endblock %}
+
+{% block body %}
+
+    <h2>Contact</h2>
+    {% for message in app.flashes('info') %}
+        <div class="flash-notice">
+            {{ message }}
+        </div>
+    {% endfor %}
+
+
+
+{% endblock %}
